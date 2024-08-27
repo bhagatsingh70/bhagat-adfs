@@ -3,7 +3,7 @@
     "description": "A Laravel package for Saml2 integration as a SP (service provider) for multiple IdPs, based on OneLogin toolkit which is much more lightweight than simplesamlphp.",
     "keywords": ["laravel","saml", "saml2", "onelogin","adfs","active directory federation service"],
     "license": "MIT",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "require-dev": {
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~4.0"
