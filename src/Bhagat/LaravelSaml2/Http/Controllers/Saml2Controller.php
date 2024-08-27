@@ -6,6 +6,7 @@ use Bhagat\LaravelSaml2\Events\Saml2LoginEvent;
 use Bhagat\LaravelSaml2\Saml2Auth;
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Crypt;
 
 class Saml2Controller extends Controller
 {
@@ -48,6 +49,7 @@ class Saml2Controller extends Controller
         $email = '';
         if($user->getUserId()){
             $email = base64_encode($user->getUserId());
+            $email =  Crypt::encrypt($user->getUserId());
         }
         $redirectUrl = $user->getIntendedUrl();
 
