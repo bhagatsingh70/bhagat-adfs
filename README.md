@@ -11,7 +11,7 @@ The aim of this library is to be as simple as possible. We won't mess with Larav
 You can install the package via composer:
 
 ```
-composer require bhagat/laravel-saml2
+composer require bhagat/laravel-saml2:dev-main
 ```
 Or manually add this to your composer.json:
 
